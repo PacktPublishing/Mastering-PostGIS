@@ -1,0 +1,26 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+2016-10-08T12:08:08.710Z,36.3902,-96.9601,5,2.9,mb_lg,,60,0.029,0.52,us,us20007csd,2016-10-08T12:27:58.372Z,"15km WNW of Pawnee, Oklahoma",earthquake,1.3,1.9,0.1,26,reviewed,us,us
+2016-10-08T11:10:29.920Z,36.4314,-98.7058,5,3.1,mb_lg,,76,0.055,0.4,us,us20007csa,2016-10-08T11:54:09.552Z,"27km NW of Fairview, Oklahoma",earthquake,2.2,2,0.08,41,reviewed,us,us
+2016-10-08T10:53:16.600Z,19.3374996,-154.9900055,5.89,2.5,ml,51,219,0.09667,0.33,hv,hv61437156,2016-10-08T10:58:57.880Z,"16km SSW of Leilani Estates, Hawaii",earthquake,0.76,0.7,0.34,9,automatic,hv,hv
+2016-10-08T09:27:19.600Z,18.5834,-65.0223,27,2.9,Md,9,223.2,0.23985018,0.05,pr,pr16282001,2016-10-08T09:49:13.164Z,"28km NNW of Charlotte Amalie, U.S. Virgin Islands",earthquake,1.4,2,0,6,reviewed,pr,pr
+2016-10-08T07:48:44.290Z,-25.3558,-69.475,130.62,4.4,mb,,85,0.218,1.1,us,us20007cru,2016-10-08T08:02:33.040Z,"101km E of Taltal, Chile",earthquake,7.1,8,0.218,6,reviewed,us,us
+2016-10-08T07:32:53.490Z,13.5882,120.7064,162.24,5,mb,,95,8.057,0.88,us,us20007crs,2016-10-08T10:31:28.660Z,"14km NNW of Wawa, Philippines",earthquake,10.5,6.4,0.074,58,reviewed,us,us
+2016-10-08T06:35:29.000Z,63.2074,-150.4862,126.8,2.5,ml,,,,0.43,ak,ak14190218,2016-10-08T07:45:12.544Z,"79km WSW of Cantwell, Alaska",earthquake,0.3,0.5,,,automatic,ak,ak
+2016-10-08T04:37:43.270Z,-36.0563,-101.0001,23.03,5.3,mb,,83,11.384,0.72,us,us20007crf,2016-10-08T04:56:08.040Z,"Southeast of Easter Island",earthquake,12,4.8,0.031,344,reviewed,us,us
+2016-10-08T04:29:46.840Z,20.3416,-57.4209,14.26,4.9,mb,,90,4.911,0.85,us,us20007crc,2016-10-08T04:45:48.040Z,"North Atlantic Ocean",earthquake,4.3,4.6,0.04,199,reviewed,us,us
+2016-10-08T03:25:27.010Z,34.6853333,-120.2845001,3.08,3.41,ml,56,88,0.0502,0.26,ci,ci37712704,2016-10-08T11:49:00.495Z,"7km S of Los Alamos, CA",earthquake,0.4,0.76,0.331,21,reviewed,ci,ci
+2016-10-08T02:40:43.200Z,17.8768,-66.6488,6,2.6,Md,11,201.6,0.20751083,0.2,pr,pr16282000,2016-10-08T03:50:54.375Z,"14km SSE of Tallaboa, Puerto Rico",earthquake,0.4,0.6,0,7,reviewed,pr,pr
+2016-10-08T00:33:23.970Z,41.012,22.6847,10,4,mb,,51,0.922,1.13,us,us20007cpm,2016-10-08T08:34:00.491Z,"10km ENE of Polykastron, Greece",earthquake,3.5,1.8,0.184,8,reviewed,us,us
+2016-10-08T00:21:27.570Z,20.0243333,-155.3721667,9.033,3.23,ml,26,209,0.1276,0.19,hv,hv61436771,2016-10-08T03:29:41.000Z,"12km ESE of Honoka'a, Hawaii",earthquake,0.66,0.9,0.139,38,reviewed,hv,hv
+2016-10-07T23:59:27.980Z,-30.9668,-71.4831,69.96,4.6,mwr,,87,0.319,1.67,us,us20007cpf,2016-10-08T00:49:36.040Z,"49km SSW of Ovalle, Chile",earthquake,5.9,5,0.05,39,reviewed,us,us
+2016-10-07T23:32:42.790Z,36.5299,70.3238,209.33,4.4,mb,,149,1.462,0.79,us,us20007cpc,2016-10-08T00:00:51.040Z,"41km E of Farkhar, Afghanistan",earthquake,7.2,7.9,0.22,6,reviewed,us,us
+2016-10-07T23:30:35.700Z,18.8715,-64.6911,8,3,Md,8,288,0.45724248,0.12,pr,pr16281010,2016-10-08T03:33:52.430Z,"50km N of Road Town, British Virgin Islands",earthquake,1.3,1.6,0,7,reviewed,pr,pr
+2016-10-07T23:08:46.400Z,17.8719,-65.6396,5,2.5,Md,5,262.8,0.23895187,0.23,pr,pr16281009,2016-10-08T03:24:00.256Z,"28km SE of El Negro, Puerto Rico",earthquake,1.1,0.8,0,4,reviewed,pr,pr
+2016-10-07T20:20:21.590Z,36.8112,-97.62,5,2.6,mb_lg,,53,0.196,0.18,us,us20007cnl,2016-10-07T21:09:35.040Z,"10km E of Medford, Oklahoma",earthquake,0.8,1.9,0.228,5,reviewed,us,us
+2016-10-07T18:23:23.000Z,60.55,-147.5748,13.1,2.7,ml,,,,0.71,ak,ak14189359,2016-10-07T19:20:44.437Z,"65km ESE of Whittier, Alaska",earthquake,0.3,0.3,,,automatic,ak,ak
+2016-10-07T16:28:48.220Z,31.915,-116.1981667,9.88,3.01,ml,30,119,0.2307,0.25,ci,ci37712312,2016-10-07T17:25:22.228Z,"40km E of Ensenada, B.C., MX",earthquake,0.29,0.94,0.147,70,reviewed,ci,ci
+2016-10-07T16:17:31.220Z,1.495,127.1541,130.32,4.7,mb,,117,0.749,0.68,us,us20007cli,2016-10-07T22:14:24.040Z,"81km NNW of Ternate, Indonesia",earthquake,9.4,8.1,0.077,51,reviewed,us,us
+2016-10-07T15:28:06.720Z,3.8228,95.7596,44.06,4.3,mb,,153,1.831,0.93,us,us20007cl8,2016-10-07T22:03:22.040Z,"53km SW of Meulaboh, Indonesia",earthquake,10.5,11.9,0.116,21,reviewed,us,us
+2016-10-07T15:14:12.050Z,14.3256,-93.8694,10,4.6,mb,,151,2.116,0.82,us,us20007cl7,2016-10-07T21:56:55.040Z,"160km SW of Mapastepec, Mexico",earthquake,5.9,1.9,0.064,73,reviewed,us,us
+2016-10-07T13:46:18.660Z,33.0281667,-116.433,8.4,2.68,ml,81,32,0.1361,0.17,ci,ci37712248,2016-10-08T03:22:00.521Z,"17km ESE of Julian, CA",earthquake,0.12,0.49,0.154,123,reviewed,ci,ci
+2016-10-07T13:20:09.400Z,18.2427,-68.5485,154,3.5,Md,21,226.8,0.3117154,0.38,pr,pr16281004,2016-10-08T00:34:53.520Z,"16km SSE of Boca de Yuma, Dominican Republic",earthquake,4.5,1.7,0,16,reviewed,pr,pr

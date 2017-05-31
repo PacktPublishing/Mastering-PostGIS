@@ -1,0 +1,10 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 3
+    POSTCODE Char (8) ;
+    UPP Char (20) ;
+    PC_AREA Char (2) ;
