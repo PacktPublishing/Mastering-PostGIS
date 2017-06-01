@@ -1,0 +1,70 @@
+@function contrast_color_by($base_color_var, $percent) {
+  @return if(lightness($base_color_var) > 50, darken($base_color_var, $percent), lighten($base_color_var, $percent));
+}
+@function reverse_gradient_for($gradient) {
+  @if $gradient == 'matte' {
+    @return 'matte-reverse';
+  }
+  @else if $gradient == 'matte-reverse' {
+    @return 'matte';
+  }
+  @else if $gradient == 'bevel' {
+    @return 'recessed';
+  }
+  @else if $gradient == 'recessed' {
+    @return 'bevel';
+  }
+  @else if $gradient == 'glossy' {
+    @return 'glossy-reverse';
+  }
+  @else if $gradient == 'glossy-reverse' {
+    @return 'glossy';
+  }
+  @else {
+    @return $gradient;
+  }
+}
+
+$background-color: dynamic(#fff);
+$page-bg-color: $background-color; // shim for Ext JS 6.0.2 - $background-color introduced in 6.2.0
+$button_color: #616161;
+$button_background_color: #f6f6f6;
+$textfield_input_color: $color;
+$grid_column_sort_icon_color: contrast_color_by($background_color, 74);
+$neutral_light_color: if(lightness($background_color) > 50, mix(#fff, $neutral_color, 80%), mix(#000, $neutral_color, 30.4%));
+$neutral_dark_color: if(lightness($background_color) > 50, mix(#000, $neutral_color, 30.4%), mix(#fff, $neutral_color, 80%));
+$treelist_toolstrip_background_color: contrast_color_by($background_color, 3);
+$color: contrast_color_by($background_color, 75);
+$neutral_color: contrast_color_by($background_color, 18);
+$progress_background_color: contrast_color_by($background_color, 7);
+$progress_text_color_front: $background_color;
+$progress_text_color_back: contrast_color_by($background_color, 100);
+$highlight_color: contrast_color_by($background_color, 62);
+$loading_spinner_color: contrast_color_by($background_color, 33);
+$mask_page_background_color: contrast_color_by($background_color, 100);
+$field_item_disabled_color: contrast_color_by($background_color, 30);
+$field_label_disabled_color: contrast_color_by($background_color, 33);
+$list_group_header_background_color: $background_color;
+$panel_tool_color: $background_color;
+$spinnerfield_button_disabled_color: contrast_color_by($background_color, 33);
+$grid_column_background_color: $background_color;
+$grid_column_resize_marker_background_color: contrast_color_by($background_color, 20);
+$grid_column_resizing_background_color: contrast_color_by($background_color, 7);
+$tab_active_background_color: $background_color;
+$panel_header_background_gradient: $base_background_gradient;
+$slider_thumb_background_gradient: $base_background_gradient;
+$slider_thumb_dragging_background_gradient: $base_background_gradient;
+$slider_track_fill_background_gradient: $base_background_gradient;
+$progress_bar_background_gradient: $base_background_gradient;
+$button_background_gradient: $base_background_gradient;
+$button_badge_background_gradient: $base_background_gradient;
+$toolbar_background_gradient: $base_background_gradient;
+$slider_track_background_gradient: $base_background_gradient;
+$toggle_thumb_background_gradient: $base_background_gradient;
+$toggle_thumb_on_background_gradient: $base_background_gradient;
+$toggle_background_gradient: $base_background_gradient;
+$toggle_on_background_gradient: $base_background_gradient;
+$tab_background_gradient: $base_background_gradient;
+$tab_active_background_gradient: $base_background_gradient;
+$tab_badge_background_gradient: $base_background_gradient;
+$button_pressed_background_gradient: reverse_gradient_for($base_background_gradient);

@@ -1,0 +1,208 @@
+$base-gradient: dynamic(none);
+
+@function contrast_color_by($base_color_var, $percent) {
+  @return if(lightness($base_color_var) > 50, darken($base_color_var, $percent), lighten($base_color_var, $percent));
+}
+@function reverse_gradient_for($gradient) {
+  @if $gradient == 'matte' {
+    @return 'matte-reverse';
+  }
+  @else if $gradient == 'matte-reverse' {
+    @return 'matte';
+  }
+  @else if $gradient == 'bevel' {
+    @return 'recessed';
+  }
+  @else if $gradient == 'recessed' {
+    @return 'bevel';
+  }
+  @else if $gradient == 'glossy' {
+    @return 'glossy-reverse';
+  }
+  @else if $gradient == 'glossy-reverse' {
+    @return 'glossy';
+  }
+  @else {
+    @return $gradient;
+  }
+}
+$background-color: dynamic(#fff);
+$page-bg-color: $background-color; // shim for Ext JS 6.0.2 - $background-color introduced in 6.2.0
+$neutral_light_color: if(lightness($body_background_color) > 50, mix(#fff, $neutral_color, 80%), mix(#000, $neutral_color, 30.4%));
+$neutral_dark_color: if(lightness($body_background_color) > 50, mix(#000, $neutral_color, 30.4%), mix(#fff, $neutral_color, 80%));
+$body_background_color: #fff;
+$grid_row_cell_selected_color: #404040;
+$grid_row_cell_focus_color: $grid_row_cell_selected_color;
+$button_small_font_size: $font_size - 1;
+$button_medium_font_size: $button_small_font_size + 2;
+$button_large_font_size: $button_medium_font_size + 2;
+$tag_field_color: dynamic($form_text_field_color);
+$toolbar_text_color: contrast_color_by($body_background_color, 70);
+
+// tag field color
+
+.x-tagfield-empty-input,
+.x-tagfield-input-field {
+  color: $tag_field_color;
+}
+
+@mixin x-placeholder-text-color($color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+    color: $color;
+  }
+
+  &::-moz-placeholder {  /* Firefox 19+ */
+    color: $color;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+// fix bug where placeholder text color doesn't get $form-field-empty-color, $form-text-field-empty-color
+.x-form-field {
+  @include x-placeholder-text-color($form-field-empty-color);
+}
+.x-form-field.x-form-text {
+  @include x-placeholder-text-color($form-text-field-empty-color);
+}
+
+// correct base-gradient for triton
+$base-gradient: '';
+
+// links
+
+$link_color: dynamic(none);
+$link_text_decoration: dynamic(none);
+
+$link_visited_color: dynamic($link_color);
+$link_visited_text_decoration: dynamic($link_text_decoration);
+
+$link_hover_color: dynamic($link_color);
+$link_hover_text_decoration: dynamic(underline);
+
+$link_active_color: dynamic($link_color);
+$link_active_text_decoration: dynamic($link_hover_text_decoration);
+
+a {
+  color: $link_color;
+  text-decoration: $link_text_decoration;
+
+  &:visited, &.x-sencha-themer-visited {
+    color: $link_visited_color;
+    text-decoration: $link_visited_text_decoration;
+  }
+
+  &:hover, &.x-sencha-themer-visited:hover {
+    color: $link_hover_color;
+    text-decoration: $link_hover_text_decoration;
+  }
+
+  &:active, &.x-sencha-themer-visited:active {
+    color: $link_active_color;
+    text-decoration: $link_active_text_decoration;
+  }
+
+  &.x-btn, &:hover.x-btn, &:active.x-btn {
+    text-decoration: none; // keep buttons from getting a text-decoration on hover
+  }
+}
+
+.x-grid-cell-inner-row-numberer {
+  color: $grid_column_header_color
+}
+$panel_body_background_color: $body_background_color;
+$treelist_toolstrip_background_color: contrast_color_by($body_background_color, 3);
+$color: contrast_color_by($body_background_color, 75);
+$neutral_color: contrast_color_by($body_background_color, 18);
+$scroll_indicator_background_color: contrast_color_by($body_background_color, 100);
+$loadmask_page_background_color: contrast_color_by($body_background_color, 100);
+$progress_text_color_front: $body_background_color;
+$highlight_color: contrast_color_by($body_background_color, 62);
+$tool_glyph_color: $body_background_color;
+$splitter_active_background_color: contrast_color_by($body_background_color, 29);
+$toolbar_background_color: $body_background_color;
+$toolbar_separator_highlight_color: $body_background_color;
+$statusproxy_background_color: $body_background_color;
+$panel_tool_focus_outline_color: $body_background_color;
+$panel_header_inner_border_color: $body_background_color;
+$panel_frame_background_color: $body_background_color;
+$panel_frame_header_inner_border_color: $body_background_color;
+$btn_group_background_color: $body_background_color;
+$btn_group_inner_border_color: $body_background_color;
+$panel_light_header_background_color: $body_background_color;
+$window_inner_border_color: $body_background_color;
+$window_background_color: $body_background_color;
+$window_body_background_color: $body_background_color;
+$window_body_color: contrast_color_by($body_background_color, 100);
+$window_header_inner_border_color: $body_background_color;
+$form_field_empty_color: contrast_color_by($body_background_color, 50);
+$form_field_background_color: $body_background_color;
+$form_field_invalid_background_color: $body_background_color;
+$messagebox_info_glyph_color: contrast_color_by($body_background_color, 50);
+$messagebox_question_glyph_color: contrast_color_by($body_background_color, 50);
+$boundlist_background_color: $body_background_color;
+$boundlist_item_over_text_color: $body_background_color;
+$boundlist_item_selected_text_color: $body_background_color;
+$datepicker_background_color: $body_background_color;
+$datepicker_item_selected_color: $body_background_color;
+$datepicker_item_disabled_background_color: contrast_color_by($body_background_color, 7);
+$tip_error_inner_border_color: $body_background_color;
+$colorpicker_background_color: $body_background_color;
+$tag_field_item_selected_color: $body_background_color;
+$grid_row_cell_background_color: $body_background_color;
+$grid_empty_color: contrast_color_by($body_background_color, 50);
+$grid_resize_marker_background_color: contrast_color_by($body_background_color, 94);
+$grid_header_background_color: $body_background_color;
+$grid_grouped_header_background_color: $body_background_color;
+$menu_background_color: $body_background_color;
+$menu_text_color: contrast_color_by($body_background_color, 100);
+$menu_item_active_text_color: $body_background_color;
+$menu_separator_background_color: $body_background_color;
+$accordion_background_color: $body_background_color;
+$tab_base_color_over: contrast_color_by($body_background_color, 100);
+$tab_base_color_active: $body_background_color;
+$tab_closable_icon_glyph_color: $body_background_color;
+$tabbar_scroller_glyph_color: $body_background_color;
+$include_slicer_gradient: $base_gradient;
+$loadmask_msg_background_gradient: $base_gradient;
+$progress_bar_background_gradient: $base_gradient;
+$button_default_background_gradient: $base_gradient;
+$button_default_background_gradient_over: $base_gradient;
+$button_default_background_gradient_focus: $base_gradient;
+$button_default_background_gradient_focus_over: $base_gradient;
+$button_default_background_gradient_disabled: $base_gradient;
+$button_toolbar_background_gradient: $base_gradient;
+$button_toolbar_background_gradient_over: $base_gradient;
+$button_toolbar_background_gradient_focus: $base_gradient;
+$button_toolbar_background_gradient_focus_over: $base_gradient;
+$button_toolbar_background_gradient_disabled: $base_gradient;
+$button_grid_cell_background_gradient: $base_gradient;
+$button_grid_cell_background_gradient_over: $base_gradient;
+$button_grid_cell_background_gradient_focus: $base_gradient;
+$button_grid_cell_background_gradient_focus_over: $base_gradient;
+$button_grid_cell_background_gradient_disabled: $base_gradient;
+$toolbar_background_gradient: $base_gradient;
+$panel_header_background_gradient: $base_gradient;
+$datepicker_header_background_gradient: $base_gradient;
+$datepicker_column_header_background_gradient: $base_gradient;
+$datepicker_footer_background_gradient: $base_gradient;
+$tip_background_gradient: $base_gradient;
+$grid_cell_special_background_gradient: $base_gradient;
+$grid_header_background_gradient: $base_gradient;
+$grid_header_over_background_gradient: $base_gradient;
+$grid_header_sorted_background_gradient: $base_gradient;
+$menu_item_background_gradient: $base_gradient;
+$tab_background_gradient: $base_gradient;
+$tabbar_background_gradient: $base_gradient;
+$button_default_background_gradient_pressed: reverse_gradient_for($base_gradient);
+$button_default_background_gradient_focus_pressed: reverse_gradient_for($base_gradient);
+$button_toolbar_background_gradient_pressed: reverse_gradient_for($base_gradient);
+$button_toolbar_background_gradient_focus_pressed: reverse_gradient_for($base_gradient);
+$button_grid_cell_background_gradient_pressed: reverse_gradient_for($base_gradient);
+$button_grid_cell_background_gradient_focus_pressed: reverse_gradient_for($base_gradient);
