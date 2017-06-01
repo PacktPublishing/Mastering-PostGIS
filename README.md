@@ -17,19 +17,19 @@ create table data_import.osgb_addresses(
 
 Following is the list of software and the download link to work through this book:
 * PostgreSQL 9.x (https://www.postgresql.org/download/)
-PostGIS 2.x (http://postgis.net/install/)
-QGIS 2.x (http://www.qgis.org/en/site/forusers/download.html)
-ogr2ogr / gdal (http://ogr2gui.ca/)
-Manifold 8 (http://manifold.net/updates/downloads.shtml)
-SQL SERVER 2016 (https://www.microsoft.com/en-us/sql-server/sql-serv
+* PostGIS 2.x (http://postgis.net/install/)
+* QGIS 2.x (http://www.qgis.org/en/site/forusers/download.html)
+* ogr2ogr / gdal (http://ogr2gui.ca/)
+* Manifold 8 (http://manifold.net/updates/downloads.shtml)
+* SQL SERVER 2016 (https://www.microsoft.com/en-us/sql-server/sql-serv
 er-downloads)
-pgAdmin 3 (Should be bundled with PostgreSQL, if not https://www.pgadmin.org/download/)
-OL3 (https://openlayers.org/download/)
-Leaflet (http://leafletjs.com/download.html)
-GeoServer 2.9 + with bundled jetty (http://geoserver.org/)
-ExtJs (https://www.sencha.com/products/evaluate/)
-Node.js (https://nodejs.org/en/download/)
-pgRouting (http://pgrouting.org/download.html)
+* pgAdmin 3 (Should be bundled with PostgreSQL, if not https://www.pgadmin.org/download/)
+* OL3 (https://openlayers.org/download/)
+* Leaflet (http://leafletjs.com/download.html)
+* GeoServer 2.9 + with bundled jetty (http://geoserver.org/)
+* ExtJs (https://www.sencha.com/products/evaluate/)
+* Node.js (https://nodejs.org/en/download/)
+* pgRouting (http://pgrouting.org/download.html)
 
 ## Related Products
 * [PostGIS Essentials](https://www.packtpub.com/big-data-and-business-intelligence/postgis-essentials?utm_source=github&utm_medium=repository&utm_campaign=9781784395292)
