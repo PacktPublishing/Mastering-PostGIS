@@ -16,7 +16,7 @@ create table data_import.osgb_addresses(
 ```
 
 Following is the list of software and the download link to work through this book:
-PostgreSQL 9.x (https://www.postgresql.org/download/)
+* PostgreSQL 9.x (https://www.postgresql.org/download/)
 PostGIS 2.x (http://postgis.net/install/)
 QGIS 2.x (http://www.qgis.org/en/site/forusers/download.html)
 ogr2ogr / gdal (http://ogr2gui.ca/)
