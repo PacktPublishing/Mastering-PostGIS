@@ -3,7 +3,7 @@ This is the code repository for [Mastering PostGIS](https://www.packtpub.com/big
 ## About the Book
 PostGIS is open source extension onf PostgreSQL object-relational database system that allows GIS objects to be stored and allows querying for information and location services. The aim of this book is to help you master the functionalities offered by PostGIS- from data creation, analysis and output, to ETL and live edits.
 ## Instructions and Navigation
-All of the code is organized into folders. Each folder starts with a number followed by the application name. For example, Chapter02.
+All of the code is organized into folders. Each folder starts with a number followed by the application name. For example, Chapter03.
 
 
 
