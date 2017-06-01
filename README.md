@@ -21,8 +21,7 @@ Following is the list of software and the download link to work through this boo
 * QGIS 2.x (http://www.qgis.org/en/site/forusers/download.html)
 * ogr2ogr / gdal (http://ogr2gui.ca/)
 * Manifold 8 (http://manifold.net/updates/downloads.shtml)
-* SQL SERVER 2016 (https://www.microsoft.com/en-us/sql-server/sql-serv
-er-downloads)
+* SQL SERVER 2016 (https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 * pgAdmin 3 (Should be bundled with PostgreSQL, if not https://www.pgadmin.org/download/)
 * OL3 (https://openlayers.org/download/)
 * Leaflet (http://leafletjs.com/download.html)
