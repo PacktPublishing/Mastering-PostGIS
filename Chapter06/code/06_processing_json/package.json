@@ -1,0 +1,17 @@
+{
+  "name": "06_processing_json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "line-by-line": "^0.1.5",
+    "pg": "^6.1.0",
+    "unzip": "^0.1.11"
+  }
+}

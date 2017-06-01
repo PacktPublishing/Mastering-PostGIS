@@ -1,0 +1,16 @@
+{
+  "name": "07_geocoding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/maps": "^0.3.0",
+    "pg": "^6.1.0"
+  }
+}
