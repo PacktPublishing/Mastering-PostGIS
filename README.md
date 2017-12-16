@@ -36,6 +36,3 @@ Following is the list of software and the download link to work through this boo
 * [PostGIS Cookbook](https://www.packtpub.com/big-data-and-business-intelligence/postgis-cookbook?utm_source=github&utm_medium=repository&utm_campaign=9781849518666)
 
 * [Mastering PostgreSQL 9.6](https://www.packtpub.com/big-data-and-business-intelligence/mastering-postgresql-96?utm_source=github&utm_medium=repository&utm_campaign=9781783555352)
-
-### Suggestions and Feedback
-[Click here](https://docs.google.com/forms/d/e/1FAIpQLSe5qwunkGf6PUvzPirPDtuy1Du5Rlzew23UBp2S-P3wB-GcwQ/viewform) if you have any feedback or suggestions.
