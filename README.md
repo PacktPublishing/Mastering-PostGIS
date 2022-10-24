@@ -41,3 +41,7 @@ Following is the list of software and the download link to work through this boo
 * [PostGIS Cookbook](https://www.packtpub.com/big-data-and-business-intelligence/postgis-cookbook?utm_source=github&utm_medium=repository&utm_campaign=9781849518666)
 
 * [Mastering PostgreSQL 9.6](https://www.packtpub.com/big-data-and-business-intelligence/mastering-postgresql-96?utm_source=github&utm_medium=repository&utm_campaign=9781783555352)
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781784391645">https://packt.link/free-ebook/9781784391645 </a> </p>
